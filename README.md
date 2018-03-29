@@ -4,6 +4,23 @@ Fix your COBOL programs automatically with the power of genetic programming.
 
 # Demo
 
+- Install a COBOL compiler:
+`...`
+
+- Install [GenProg](https://github.com/squaresLab/genprog-code)
+
+- Clone this repository inside `genprog-code`:
+```cd genprog-code
+git clone https://github.com/squaresLab/COBOLd.git
+```
+
+- `cd` to the bug and run genprog:
+```
+cd COBOLd/code/zunebug`
+repair configuration
+```
+
+
 # Cite us:
 
 ```
