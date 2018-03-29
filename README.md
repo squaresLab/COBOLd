@@ -6,22 +6,31 @@ Fix your COBOL programs automatically with the power of genetic programming.
 
 - Install a COBOL compiler:
 
-```sudo apt-get install open-cobol```
+`sudo apt-get install open-cobol`
 
 - Install [GenProg](https://github.com/squaresLab/genprog-code)
 
-- Clone this repository inside `genprog-code`:
+- Clone this repository:
 ```
-cd genprog-code
 git clone https://github.com/squaresLab/COBOLd.git
 ```
 
-- Then `cd` to the bug and run genprog:
+- Compile `limit.c` in the `src` directory, naming the binary `limit`
 ```
-cd COBOLd/code/zunebug`
-repair configuration
+cd COBOLd/src
+gcc -o limit limit.c
 ```
 
+- Then `cd` to the bug you'd like to repair and run GenProg using the
+configuration file included with the bug:
+```
+cd COBOLd/code/zunebug`
+/path/to/genprog-code/src/repair configuration
+```
+
+It may take a few runs (the search is stochastic, after all!), but if GenProg
+finds a repair it will report `repair found`, and output the repaired version of
+the program to a `repair` subdirectory.
 
 # Cite us:
 
