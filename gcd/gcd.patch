@@ -1,0 +1,10 @@
+--- gcd.cobol	2018-02-15 16:25:21.157343503 -0500
++++ gcd-fixed.cobol	2018-02-15 16:25:01.233372557 -0500
+@@ -11,6 +11,7 @@
+            PERFORM
+            IF WS-A = 0 THEN
+                DISPLAY WS-B
++               STOP RUN
+            END-IF
+            PERFORM A-PARA UNTIL WS-B = 0
+            DISPLAY WS-A

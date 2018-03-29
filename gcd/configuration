@@ -1,0 +1,15 @@
+--program multi.txt
+--rep txt
+--search ga
+--popsize 100
+--generations 20
+--prefix src
+--fix-scheme uniform
+--fault-scheme uniform
+--sanity no
+--pos-tests 2
+--neg-tests 1
+--compiler-command ./compile.sh __SOURCE_NAME__ __EXE_NAME__
+--test-command ./test.sh __EXE_NAME__ __TEST_NAME__
+--seed 661480205
+--quiet
