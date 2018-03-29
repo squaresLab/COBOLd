@@ -5,7 +5,8 @@ Fix your COBOL programs automatically with the power of genetic programming.
 # Demo
 
 - Install a COBOL compiler:
-`...`
+
+```sudo apt-get install open-cobol```
 
 - Install [GenProg](https://github.com/squaresLab/genprog-code)
 
