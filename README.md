@@ -24,7 +24,7 @@ gcc -o limit limit.c
 - Then `cd` to the bug you'd like to repair and run GenProg using the
 configuration file included with the bug:
 ```
-cd COBOLd/code/zunebug`
+cd COBOLd/code/zunebug
 /path/to/genprog-code/src/repair configuration
 ```
 
